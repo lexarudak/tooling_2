@@ -117,15 +117,31 @@
 
 ## 2) на вкладке Performance
 
-- 2.1) записать и сохранить в файл профиль загрузки страницы - [Файл (нажмите View raw)](https://github.com/lexarudak/tooling_2/blob/main/duplication/%D0%BF%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8C_%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B8_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B.json.zip)
+- 2.1) записать и сохранить в файл профиль загрузки страницы - [Файл (нажмите View raw)](https://github.com/lexarudak/tooling_2/blob/main/duplication/Trace.json.zip))
 
 - 2.2) измерить время в миллисекундах от начала навигации до событий First Paint (FP), First Contentful Paint (FCP), Largest Contentful Paint (LCP), DOM Content Loaded (DCL), Load
-- <img width="193" alt="image" src="https://github.com/lexarudak/tooling_2/assets/106698008/221944d0-497e-4940-910b-172fe10d8528">
-- <img width="176" alt="image" src="https://github.com/lexarudak/tooling_2/assets/106698008/15613fba-971e-4940-9c8f-6648c9d3c5e2">
-- <img width="187" alt="image" src="https://github.com/lexarudak/tooling_2/assets/106698008/5cd98b60-f8d5-4a7d-aad3-b50d8372c4c7">
-- <img width="180" alt="image" src="https://github.com/lexarudak/tooling_2/assets/106698008/fdd7ec3b-e562-4e2e-ae2b-1d722057bfb1">
-- <img width="180" alt="image" src="https://github.com/lexarudak/tooling_2/assets/106698008/676c757a-a052-49fc-be1b-998cbf4f47ed">
+- <img width="290" alt="image" src="https://github.com/lexarudak/tooling_2/assets/106698008/6d0fac39-765c-40bd-9112-d810d55bcead">
+- <img width="270" alt="image" src="https://github.com/lexarudak/tooling_2/assets/106698008/ff48c3cc-c343-46dd-a959-da0b62b6c200">
+- <img width="264" alt="image" src="https://github.com/lexarudak/tooling_2/assets/106698008/1cc98165-717e-401f-9f41-8cb40591404c">
+- <img width="276" alt="image" src="https://github.com/lexarudak/tooling_2/assets/106698008/e19aebc9-d709-4e3a-9f3b-160af1ef6d00">
+- <img width="283" alt="image" src="https://github.com/lexarudak/tooling_2/assets/106698008/f5cb6a40-42d5-4aa5-b503-0ce46f6dfdbd">
 
+- 2.3) определить, на каком DOM-элементе происходит LCP
+```<img loading="lazy" itemprop="image" src="/images/finansovyy-kontrol.jpg" width="600" height="408" data-url="/images/finansovyy-kontrol.jpg" alt="" title="" class="contentImage__image">```
+
+- 2.4) измерить, сколько времени в миллисекундах тратится на разные этапы обработки документа (Loading, Scripting, Rendering, Painting)
+- <img width="291" alt="image" src="https://github.com/lexarudak/tooling_2/assets/106698008/bbe39185-212c-46ee-a5a6-dd7cc8a936c6">
+
+## 3) на вкладке Coverage
+
+- 3.1) сохранить скриншот вкладки после загрузки страницы
+<img width="1440" alt="image" src="https://github.com/lexarudak/tooling_2/assets/106698008/24374ed5-78b7-4abc-83c0-74b084d0c3dd">
+
+- 3.2) измерить в килобайтах объём неиспользованного CSS в ходе загрузки страницы
+- 559kB
+
+- 3.3) измерить в килобайтах объём неиспользованного JS в ходе загрузки страницы
+- 2.3MB (2300kB)
 
 
 
